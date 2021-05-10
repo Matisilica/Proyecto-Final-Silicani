@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.position {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  z-index: 2;
+}
+
+li {
+  font-family: "Kavivanar", cursive;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul {
+  display: table;
+  overflow: hidden;
+  width: 100%;
+  background: #535353;
+  position: relative;
+}
+
+nav ul li {
+  display: table-cell;
+}
+
+.icono {
+  width: 30px;
+}
+
+nav ul li a {
+  color: white;
+  display: block;
+  line-height: 20px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+nav ul li a span {
+  background: #021523;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: -55px;
+}
+
+nav ul li a span .icon {
+  display: block;
+  line-height: 80px;
+}
+
+nav ul li a:hover span {
+  top: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+nav ul li a .rojo {
+  background: #f76b6b;
+}
+
+nav ul li a .verde {
+  background: #5bf7a1;
+}
+
+nav ul li a .amarillo {
+  background: #ebf18c;
+}
+
+nav ul li a .celeste {
+  background: #24bfee;
+}
+
+nav ul li a .naranja {
+  background: #f79f1b;
+}
+
+/*Estilos para que el nav sea MobileFirst*/
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background: #021523;
+}
+
+.navbar .navbar-header {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #8E8E8E;
+}
+
+.brand-link {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.brand-link .navbar-menu-mobile {
+  color: #EF5734;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-container {
+  position: absolute;
+  background: #021523;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: height 0.4s ease;
+  transition: height 0.4s ease;
+}
+
+.navbar-container .navbar-link {
+  color: #ffffff;
+}
+
+#navbar-header:target .navbar-container {
+  height: 300px;
+}
+
+#navbar-header:target .open {
+  display: none;
+}
+
+#navbar-header:target .close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.close {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar-menu-mobile {
+    display: none;
+  }
+  .navbar-container {
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: static;
+    width: 60%;
+  }
+}
+
+@media (max-width: 1200px) {
+  nav ul li a .rojo {
+    background: rgba(247, 107, 107, 0);
+  }
+  nav ul li a .verde {
+    background: rgba(91, 247, 161, 0);
+  }
+  nav ul li a .amarillo {
+    background: rgba(235, 241, 140, 0);
+  }
+  nav ul li a .celeste {
+    background: rgba(36, 191, 238, 0);
+  }
+  nav ul li a .naranja {
+    background: rgba(247, 159, 27, 0);
+  }
+  .icono {
+    width: 0px;
+    height: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
