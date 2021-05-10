@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,21 +26,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Raleway:wght@200&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar" id="navbar-header">
-        <header class="navbar-header" >
+    <section class="position">
+        <nav class="navbar" id="navbar-header">
+            <header class="navbar-header">
                 <span class="brand-link">We Work Together</span>
-            <a href="#navbar-header" class="navbar-menu-mobile open"><img src="imagenes/open.png" alt=""></a>
-            <a href="#" class="navbar-menu-mobile close"><img src="imagenes/cierre.png" alt=""></a>
-        </header>
-        <ul class="navbar-container">
-            <li class="navbar-item"><a href="index.html" class="navbar-link"><span class="rojo"><i class="icon"><img class="icono" src="imagenes/home.png" alt=""></i></span>Home</a></li>
-            <li class="navbar-item"><a href="html/planes.html" class="navbar-link"><span class="verde"><i class="icon"><img class="icono" src="imagenes/planes.png" alt=""></i></span>Planes</a></li>
-            <li class="navbar-item"><a href="html/galeria.html" class="navbar-link"><span class="amarillo"><i class="icon"><img class="icono" src="imagenes/galeria.png" alt=""></i></span>Galeria</a></li>
-            <li class="navbar-item"><a href="html/nosotros.html" class="navbar-link"><span class="naranja"><i class="icon"><img class="icono" src="imagenes/nosotros.png" alt=""></i></span>Nosotros</a></li>
-            <li class="navbar-item"><a href="html/contacto.html" class="navbar-link"><span class="celeste"><i class="icon"><img class="icono" src="imagenes/MAIL.png" alt=""></i></span>Contactos</a></li>
-        </ul>
-    </nav>
+                <a href="#navbar-header" class="navbar-menu-mobile open"><img src="imagenes/open.png" alt=""></a>
+                <a href="#" class="navbar-menu-mobile close"><img src="imagenes/cierre.png" alt=""></a>
+            </header>
+            <ul class="navbar-container">
+                <li class="navbar-item"><a href="index.html" class="navbar-link"><span class="rojo"><i class="icon"><img
+                                    class="icono" src="imagenes/home.png" alt=""></i></span>Home</a></li>
+                <li class="navbar-item"><a href="html/planes.html" class="navbar-link"><span class="verde"><i
+                                class="icon"><img class="icono" src="imagenes/planes.png" alt=""></i></span>Planes</a>
+                </li>
+                <li class="navbar-item"><a href="html/galeria.html" class="navbar-link"><span class="amarillo"><i
+                                class="icon"><img class="icono" src="imagenes/galeria.png" alt=""></i></span>Galería</a>
+                </li>
+                <li class="navbar-item"><a href="html/nosotros.html" class="navbar-link"><span class="naranja"><i
+                                class="icon"><img class="icono" src="imagenes/nosotros.png"
+                                    alt=""></i></span>Nosotros</a>
+                </li>
+                <li class="navbar-item"><a href="html/contacto.html" class="navbar-link"><span class="celeste"><i
+                                class="icon"><img class="icono" src="imagenes/mail.png" alt=""></i></span>Contactos</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </section>
     <main>
         <section class="imgLogoCentral">
             <!--El logo se coloca en marca de agua y tiene una animación cuando pasas el mouse se mueve-->
@@ -47,44 +62,45 @@
             <img class="imgCentral img-fluid" src="imagenes/principal.jpg" alt="panoramica de la empresa">
         </section>
         <section class="contacto">
-            <br>
-            <br>
             <h1 class="homeServicios">Servicios</h1>
             <hr>
         </section>
-        
-        <section><!--Le doy la misma clase que al contacto para que la pag este en armonia con los margenes-->
+
+        <section>
+            <!--Le doy la misma clase que al contacto para que la pag este en armonia con los margenes-->
             <!--Utilizo Row Columns de bootstrap (https://getbootstrap.com/docs/5.0/layout/grid/)-->
             <div class="container">
-                <div class="row g-3"> <!--Cambio la clase row-cols-2 por g-3-->
-                    <div class="col-md-4">
+                <div class="row">
+                    <!--Cambio la clase row-cols-2 por g-3-->
+                    <div class="col col-sm col-xl d-flex justify-content-center">
                         <!--Utilizo card images de bootstrap (https://getbootstrap.com/docs/5.0/components/card/)-->
-                        <div style="width: 23rem;">
-                            <div class="center"> <!--Genero un div para poder dale una clase que centre la imagen-->
-                                <img class="homeSize" src="imagenes/Escritorios.png" class="card-img-top"
+                        <div class="style">
+                            <div class="center">
+                                <!--Genero un div para poder dale una clase que centre la imagen-->
+                                <img class="homeSize" src="imagenes/escritorios.png" class="card-img-top"
                                     alt="escritorio">
                             </div>
                             <div class="card-body">
                                 <h2 class="opciones">Escritorios Abiertos</h2>
-                                <p class="opcionesInt">n ambiente agradable, rodeado de una arquitectura sobria con
-                                    amplitud para trabajar comodos,
+                                <p class="opcionesInt">Un ambiente agradable, rodeado de una arquitectura sobria con amplitud para trabajar cómodos,
                                     pero a
                                     su vez con el punto justo
                                     para sentirse acompañado.
-                                    Podes traer tu notbook, o te ofrecemos escritorios con PC.
-                                    Las posibilidades de que inicie la creatividad en estos espacios es increible!</p>
+                                    Podés traer tu notebook, o te ofrecemos escritorios con PC.
+                                    Las posibilidades de que inicie la creatividad en estos espacios es increíble!</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div style="width: 23rem;">
+                    <div class="col col-sm col-xl d-flex justify-content-center">
+                        <div class="style">
                             <div class="center">
                                 <img class="homeSize" src="imagenes/sala de reuniones.png" class="card-img-top"
                                     alt="sala de reuniones">
                             </div>
                             <div class="card-body">
                                 <h2 class="opciones">Sala de Reuniones</h2>
-                                <p class="opcionesInt">Nuestra sala de reuniones cuenta con proyector de 75" con definición 4K, con
+                                <p class="opcionesInt">Nuestra sala de reuniones cuenta con proyector de 75" con
+                                    definición 4K, con
                                     sonido
                                     envolvente
                                     5.1 para hacer
@@ -96,40 +112,43 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div style="width: 23rem;">
+                    <div class="col col-sm col-xl d-flex justify-content-center">
+                        <div class="style">
                             <div class="center">
                                 <img class="homeSize" src="imagenes/living.png" class="card-img-top" alt="living">
                             </div>
-                                <div class="card-body">
+                            <div class="card-body">
                                 <h2 class="opciones">Living</h2>
-                                <p class="opcionesInt">Un espacio destinado a la relajación, lectura, charlas informales con otros profeconales
+                                <p class="opcionesInt">Un espacio destinado a la relajación, lectura, charlas informales
+                                    con otros profesionales
                                     mirar tele, desenchufarte.
-                                    Es un espacio muy aceptado por todos y de donde en muchos momentos no vas a querer irte.
-                                    Además cuenta con juegos de mesa y electronicos para compartir momentos.
+                                    Es un espacio muy aceptado por todos y de donde en muchos momentos no vas a querer
+                                    irte.
+                                    Además cuenta con juegos de mesa y electrónicos para compartir momentos.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div style="width: 23rem;">
+                    <div class="col col-sm col-xl d-flex justify-content-center">
+                        <div class="style">
                             <div class="center">
                                 <img class="homeSize" src="imagenes/oficinas.png" class="card-img-top" alt="Oficinas">
                             </div>
-                                <div class="card-body">
+                            <div class="card-body">
                                 <h2 class="opciones">Oficinas Privadas</h2>
-                                <p class="opcionesInt">Con una privacidad absoluta, integrada paradojicamente en un
-                                    hambiente donde
-                                    todo se comparte, las oficinas privadas son una opcion muy atractiva y elegida por
-                                    nuestros clientes los que buscan un espacio intimo en una ambiente compartido.
-                                    Con vistas unicas, mobiliarios de alta calidad, gran diseño, y espacios mas que suficientes para poder recibir a los clientes, que
+                                <p class="opcionesInt">Con una privacidad absoluta, integrada paradógicamente en un
+                                    ambiente donde
+                                    todo se comparte, las oficinas privadas son una opción muy atractiva y elegida por
+                                    nuestros clientes los que buscan un espacio íntimo en un ambiente compartido.
+                                    Con vistas únicas, mobiliarios de alta calidad, gran diseño, y espacios más que
+                                    suficientes para poder recibir a los clientes, que
                                     esperas para
                                     conocerlas?</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div style="width: 23rem;">
+                    <div class="col col-sm col-xl d-flex justify-content-center">
+                        <div class="style">
                             <div class="center">
                                 <img class="homeSize" src="imagenes/capacitaciones.png" class="card-img-top"
                                     alt="capacitaciones">
@@ -141,107 +160,113 @@
                                     en
                                     administración y
                                     recursos humanos.
-                                    Nuestras capacitaciones estan partidas por profesionales en el tema, con disertantes referentes de
+                                    Nuestras capacitaciones están partidas por profesionales en el tema, con disertantes
+                                    referentes de
                                     universidades nacionales e internacionales.
                                     Las realizamos en nuestra sala de reuniones, y los cupos son limitados.
-                                    Los calendarios se publican mes a mes, y se pueden consiltar en el
-                                    siguiente
-                                    <a class="linkNav" href="html/calendario.html">LINK.</a>
+                                    Los calendarios se publican mes a mes, y se pueden consultar
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div style="width: 23rem;">
+                    <div class="col col-sm col-xl d-flex justify-content-center">
+                        <div class="style">
                             <div class="center">
                                 <img class="homeSize" src="imagenes/gym.png" class="card-img-top" alt="gym">
                             </div>
-                                <div class="card-body">
+                            <div class="card-body">
                                 <h2 class="opciones">Gimnasio</h2>
-                                <p class="opcionesInt">Lo que verdaderamente nos diferencia de otros espacios de coworking,
+                                <p class="opcionesInt">Lo que verdaderamente nos diferencia de otros espacios de
+                                    coworking,
                                     es
                                     nuestro
                                     GYM, con capacidad
                                     para 10 personas.
-                                    Tenes la posibilidad de despejarte, entrenar, o simplemente acerte para conocer a otras
+                                    Tenés la posibilidad de despejarte, entrenar, o simplemente hacerte para conocer a
+                                    otras
                                     personas
                                     en
                                     un entorno diferente al laboral.
-                                    Es un sector sumamente cálido donde muchas veces se logran grandes acuerdos y proyectos,
+                                    Es un sector sumamente cálido donde muchas veces se logran grandes acuerdos y
+                                    proyectos,
                                     ya
                                     que
                                     el
-                                    lugar ofrece una opción de distención y armonia.</p>
+                                    lugar ofrece una opción de distensión y armonía.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                    <div class="col-md-4">
-                        <div style="width: 70rem;">
-                            <div class="center">
-                                <img class="homeSize" src="imagenes/cofee.png" class="card-img-top" alt="cafe">
-                            </div>
-                                <div class="card-body">
-                                <h2 class="opciones">Tea & Coffe</h2>
-                                <p class="opcionesInt">Hermosa zona de relax, totalmente equipada con cocina, heladera, y electrodomesticos necesarios
-                                    para que disfrutes de un breack, con
-                                    un te, cafe o refresco y porque no para que pases un excelente almuerzo con compañeros. Muchas veces es un lugar donde te despejas y las ideas brotan!</p>
-                            </div>
+                <div class="col col-sm col-xl d-flex justify-content-center">
+                    <div class="style">
+                        <div class="center">
+                            <img class="homeSize" src="imagenes/cofee.png" class="card-img-top" alt="cafe">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="opciones">Tea & Coffee</h2>
+                            <p class="opcionesInt">Hermosa zona de relax, totalmente equipada con cocina, heladera, y
+                                electrodomésticos necesarios
+                                para que disfrutes de un break, con
+                                un té, café o refresco y porque no para que pases un excelente almuerzo con compañeros.
+                                Muchas veces es un lugar donde te despejas y las ideas brotan!</p>
                         </div>
                     </div>
                 </div>
-              
+            </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-main">
-                <div class="footer-columna">
-                    <h3>Consultas</h3>
-                    <textarea name="mensaje" placeholder="Escriba su Consulta"></textarea>
-                    <input type="submit" value=" Enviar mensaje">
-                </div>
-                <div class="footer-columna">
-                    <h3>Dirección</h3>
-                    <span class="fa fa-map-marker">
-                        <p>Pje Las Almendras 12 6º F</p>
-                    </span>
-                    <span class="fa fa-city">
-                        <p>Tandil - CP 7000</p>
-                    </span>
-                    <span class="fa fa-province">
-                        <p>Buenos aires - Argentina</p>
-                    </span>
-                </div>
-                <div class="footer-columna">
-                    <h3>Contacto</h3>
-                    <span class="fa fa-phone">
-                        <p>02458-352556325</p>
-                    </span>
-                    <span class="fa fa-envelope">
-                        <p>weworkingtogether@info.com</p>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copy-redes">
-            <div class="main-copy-redes">
-                <div class="footer-copy">
-                    &copy; 2021, Todos los derechos reservados - | Matias Silicani |.
-                </div>
-                <div class="footer-redes">
-                    <a href="http://www.facebook.com" target="_blank"><img class="imgSocial"
-                            src="imagenes/facebook.png"></a>
-                    <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img class="imgSocial"
-                            src="imagenes/instagram.png"></a>
-                    <a href="http://www.youtube.com" target="_blank"><img class="imgSocial"
-                            src="imagenes/youtube.png"></a>
-                    <a href="http://www.twitter.com" target="_blank"><img class="imgSocial"
-                            src="imagenes/twitter.png"></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+	<footer>
+		<div class="footer-container">
+			<div class="footer-main">
+				<div class="footer-columna">
+					<h3>Consultas</h3>
+					<textarea class="sizetextarea" name="mensaje" placeholder="Escriba su Consulta aquí, dejándonos un contacto"></textarea>
+					<a href="../404/error.html"><input class="sizetextarea btn" type="submit" value=" Enviar mensaje"></a>
+				</div>
+
+				<div class="footer-columna">
+					<h3>Dirección</h3>
+					<span class="fa fa-map-marker">
+						<p>Pje Las Almendras 12 6º F</p>
+					</span>
+					<span class="fa fa-city">
+						<p>Tandil - CP 7000</p>
+					</span>
+					<span class="fa fa-province">
+						<p>Buenos aires - Argentina</p>
+					</span>
+				</div>
+
+				<div class="footer-columna">
+					<h3>Contacto</h3>
+					<span class="fa fa-phone">
+						<p>02458-352556325</p>
+					</span>
+					<span class="fa fa-envelope">
+						<p>weworkingtogether@info.com</p>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-copy-redes">
+			<div class="main-copy-redes">
+				<div class="footer-copy">
+					&copy; 2021, Todos los derechos reservados - | Matias Silicani |.
+				</div>
+				<div class="footer-redes">
+					<a href="http://www.facebook.com" target="_blank"><img class="imgSocial"
+							src="imagenes/facebook.png"></a>
+					<a href="https://www.instagram.com/?hl=es-la" target="_blank"><img class="imgSocial"
+							src="imagenes/instagram.png"></a>
+					<a href="http://www.youtube.com" target="_blank"><img class="imgSocial"
+							src="imagenes/youtube.png"></a>
+					<a href="http://www.twitter.com" target="_blank"><img class="imgSocial"
+							src="imagenes/twitter.png"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
     <!--Aca van los scripts de bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
         integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"

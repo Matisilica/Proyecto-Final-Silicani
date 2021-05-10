@@ -11,7 +11,7 @@
 
 
 li {
-    font-family: 'Kavivanar', cursive;
+    font-family: 'Comfortaa', cursive
 }
 
 nav ul {
@@ -31,7 +31,9 @@ nav > ul li {
 }
 
 .icono {
-    width: 30px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 25%;
 }
 
 nav > ul li a {
@@ -66,6 +68,7 @@ nav > ul > li > a span .icon {
 
 nav > ul > li > a:hover > span {
     top: 0;
+    text-decoration: none;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -96,7 +99,7 @@ nav ul li a .naranja {
 
 /*Estilos para que el nav sea MobileFirst*/
 :root {
-    --primary: #021523;
+    --primary: #272727;
     --danger: #EF5734;
     --grey: #8E8E8E;
     --white: #FFFFFF;
@@ -130,7 +133,6 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--grey); 
 }
 
 .navbar-menu-mobile{
@@ -145,6 +147,7 @@ a{
 .brand-link{
     color: var(--white);
     font-size: 2rem;
+    font-family: 'Comfortaa', cursive
 }
 
 .navbar-container{
@@ -229,4 +232,8 @@ a{
         height: 0px;
     }
     
+    nav > ul > li > a span {
+        top:0;
+        height: 20px;
+    }
 }

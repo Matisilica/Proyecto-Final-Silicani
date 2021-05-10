@@ -1,15 +1,10 @@
 
-/*Estilo de fuentes, extraidas de goolge font
-font-family: 'Raleway', sans-serif;
-font-family: 'RocknRoll One', sans-serif;    */
-
 /*Aqui van los estilos del HTML Index*/
 .imgLogoCentral {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .logoCentral {
     background-size: cover;
     border-radius: 400px;
@@ -17,17 +12,14 @@ font-family: 'RocknRoll One', sans-serif;    */
     position: absolute;
     margin: 30 500 500 30;
     width: 400px;
-    height: 400px;
-    -webkit-transition: all .6s ease;
+    height: auto;
+    transition: all .6s ease;
 }
-
 .logoCentral:hover {
     opacity: .6;
     border-radius: 200px;
-    -webkit-transform: scale(1.2), rotate(330deg);
     box-shadow: 0px 0px 20px #000;
 }
-
 .imgCentral {
     text-align: center;
     width: 100%;
@@ -37,31 +29,20 @@ font-family: 'RocknRoll One', sans-serif;    */
     opacity: 0.4;
     z-index: -1;
 }
-
 .homeSize {
     height: 50px;
 }
 .center {
     text-align: center;
 }
-
-
-/*.flex {
-    margin: 30px 30px 30px 30px;
-    display: flex;  
-    flex-wrap: wrap;
-    flex-direction: row; 
-    justify-content:space-between;
-    align-items: center;
-    -ms-flex-item-align: start;
-}*/
-
+.style {
+    width: 30rem;
+}
 .homeServicios {
-    margin-left: 10%;
+    margin: 10% 10% 0% 0%;
     font-family: 'RocknRoll One', sans-serif;
     font-size: 32px;
 }
-
 .opciones {
     text-align: center;
     font-family: 'RocknRoll One', sans-serif;
@@ -69,20 +50,18 @@ font-family: 'RocknRoll One', sans-serif;    */
     font-weight: 200;
     margin: 5px 0 25px 0;
 }
-
 .opcionesInt {
     font-family: 'Raleway', sans-serif;
-    text-align: justify;
+    text-align: center;
 }
 
-
 /*Aqui van los estilos del HTML planes*/
-
 .flexPlan {
-    font-family: 'RocknRoll One', sans-serif;
-    width: 80%;
-    margin: 30px;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    margin-top: 5%;
     position: relative;
+    text-align: center;
 }
 .imgPlan {
     opacity: 1;
@@ -91,7 +70,6 @@ font-family: 'RocknRoll One', sans-serif;    */
     height: auto;
     transition: .5s ease;
 }
-
 .content {
     position: absolute;
     width: 80%;
@@ -101,63 +79,51 @@ font-family: 'RocknRoll One', sans-serif;    */
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 30px;
+    font-size: 100%;
+    font-weight: bold;
     color: #000;
     white-space: nowrap;
     overflow: hidden;
 }
-
 .content a {
     text-decoration: none;
     font-size: 15px;
     display: block;
-    background-color: #ff771d;
+    background-color: #00C6EE;
     text-align: center;
     padding: 10px;
     cursor: pointer;
+    color: #ffffff;
 }
-
 .overlay {
     opacity: 0;
 }
-
 .flexPlan:hover .imgPlan {
     opacity: .5;
 }
-
 .flexPlan:hover .overlay {
     opacity: 1;
 }
 
-
 /*Aqui van los estilos del HTML nosotros*/
-
 .imgNosotros {
     margin: 10%;
-    width: 200px;
+    width: 400px;
     height: 400px;
     object-fit: cover;
     object-position: center;
-
 }
-
-.tituloNos {
-    text-align: center;
-    font-family: 'RocknRoll One', sans-serif;
-    font-size: 32px;
-}
-
 .gridNos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2
+    3, 1fr);
     grid-row-start: auto;
     align-items:flex-start;
     padding: 5px;
+    z-index: -1;
 }
 
-
 /*Aqui van los estilos del HTML galeria*/
-
 img{
 	max-width: 100%;
 }
@@ -172,104 +138,55 @@ img{
 	cursor:zoom-in;
     object-fit: cover;
 }
+
 /*Este es el modal de la imagen */
 #gallery-modal .modal-img{
 	width: 100%;
 }
-
 .carousel-item img {
     padding: 15px;
     height: 550px;
     object-fit: cover;
     border-radius: 40px;
 }
-
-
-.tituloGaleria {
+.tituloVideo {
+    margin: 5% 10% 10% 10%; 
     text-align: center;
     font-family: 'RocknRoll One', sans-serif;
     font-size: 32px;
 }
-
+.tituloGaleria {
+    margin: 0% 10% 0% 10%; 
+    text-align: center;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 32px;
+}
 .media {
     width: 700px;
     height: 350px;
     box-shadow: 0 0 10px rgba(0,0,0,0.9);
     cursor:all-scroll
 }
-
 .flexImg {
     display: flex;
     justify-content: center;
 }
 
 /*Aqui van los estilos del HTML contacto*/
-
 .contacto {
-    margin:0 15% 5% 15%;
+    margin:0% 5% 5% 5%;
 }
-
 .center h5 {
     color: tomato;
+        margin: 2%; 
+        text-align: center;
+        font-family: 'RocknRoll One', sans-serif;
+        font-size: 1rem;
 }
-
 .btn:hover {
-    background-color: teal;
-}
-
-/*Aqui van los estilos del HTML calendario*/
-
-.tablaCompleta {
-    border-style: groove;
-    border-radius: 10px;
-}
-
-.tablaMes {
     background-color: #00C6EE;
-    color: white;
-    font-family: 'RocknRoll One', sans-serif;
 }
-
-.tablaEncabezado {
-    background-color: rgb(247, 159, 27);
-    color: white;
-    font-family: 'Raleway', sans-serif;
-}
-
-.tablaInterior {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-}
-
-.tituloClendario{
-    text-align: center;
-    font-family: 'RocknRoll One', sans-serif;
-    font-size: 32px;
-}
-
-.seminarios{
-    text-align: right;
-    margin-right: 25%;
-    font-family: 'RocknRoll One', sans-serif;
-    font-size: 25px;
-}
-.seminariosInt{
-    text-align: right;
-    margin-right: 25%;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-}
-
-.capacitaciones{
-    text-align: left;
-    margin-left: 25%;
-    font-family: 'RocknRoll One', sans-serif;
-    font-size: 25px;
-}
-
-.capacitacionesInt{
-    text-align: left;
-    margin-left: 25%;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+.buton {
+    background-color: #00C6EE;
+    color: #ffffff;
 }

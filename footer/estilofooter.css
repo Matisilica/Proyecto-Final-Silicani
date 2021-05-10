@@ -40,6 +40,10 @@ footer {
 	flex-wrap: wrap;
 }
 
+.sizetextarea {
+	width: 210px;
+}
+
 .footer-main .footer-columna {
 	width: calc(100% / 3);
 	text-align: justify;
@@ -86,7 +90,6 @@ footer {
 .footer-copy-redes {
 	width: 100%;
 	background: #000;
-	border-top: 3px solid #fff;
 }
 
 .main-copy-redes {
@@ -120,8 +123,6 @@ footer {
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
-	border-radius:50%;
-	background: #fff;
 	color: #000;
 	text-align: center;
 }
@@ -144,7 +145,7 @@ footer {
 	}
 }
 
-@media screen  and (max-width: 400px) {
+@media screen  and (max-width: 450px) {
 	.info-main {
 		padding: 30px 30px;
 	}
@@ -181,3 +182,4 @@ footer {
 		width: 80%;
 		margin: auto;
 	}
+}
