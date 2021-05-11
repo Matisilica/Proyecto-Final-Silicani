@@ -1,14 +1,13 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
 
-.position{
+.position {
     position: sticky;
     top: 0%;
     z-index: 2;
 }
-
 
 li {
     font-family: 'Comfortaa', cursive
@@ -18,7 +17,7 @@ nav ul {
     list-style: none;
 }
 
-nav > ul {
+nav>ul {
     display: table;
     overflow: hidden;
     width: 100%;
@@ -26,7 +25,7 @@ nav > ul {
     position: relative;
 }
 
-nav > ul li {
+nav>ul li {
     display: table-cell;
 }
 
@@ -36,7 +35,7 @@ nav > ul li {
     margin-bottom: 25%;
 }
 
-nav > ul li a {
+nav>ul li a {
     color: white;
     display: block;
     line-height: 20px;
@@ -51,7 +50,7 @@ nav > ul li a {
     transition: all .3s ease;
 }
 
-nav > ul > li > a span {
+nav>ul>li>a span {
     background: #174459;
     display: block;
     height: 100%;
@@ -61,12 +60,12 @@ nav > ul > li > a span {
     top: -55px;
 }
 
-nav > ul > li > a span .icon {
+nav>ul>li>a span .icon {
     display: block;
     line-height: 80px;
 }
 
-nav > ul > li > a:hover > span {
+nav>ul>li>a:hover>span {
     top: 0;
     text-decoration: none;
     -webkit-transition: all .3s ease;
@@ -96,8 +95,8 @@ nav ul li a .naranja {
     background: rgb(247, 159, 27);
 }
 
-
 /*Estilos para que el nav sea MobileFirst*/
+
 :root {
     --primary: #272727;
     --danger: #EF5734;
@@ -105,37 +104,35 @@ nav ul li a .naranja {
     --white: #FFFFFF;
 }
 
-*,
-::before,
-::after{
+*, ::before, ::after {
     box-sizing: border-box;
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
-.navbar{
+
+.navbar {
     background: var(--primary);
-    
 }
 
-.navbar-header{
+.navbar-header {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar-menu-mobile{
+.navbar-menu-mobile {
     color: var(--danger);
     width: 40px;
     height: 40px;
@@ -144,13 +141,13 @@ a{
     align-items: center;
 }
 
-.brand-link{
+.brand-link {
     color: var(--white);
     font-size: 2rem;
     font-family: 'Comfortaa', cursive
 }
 
-.navbar-container{
+.navbar-container {
     position: absolute;
     background: var(--primary);
     width: 100%;
@@ -163,39 +160,35 @@ a{
     transition: height 0.4s ease;
 }
 
-.navbar-link{
+.navbar-link {
     color: var(--white);
 }
 
-#navbar-header:target .navbar-container{
+#navbar-header:target .navbar-container {
     height: 300px;
 }
 
-
-#navbar-header:target .open{
+#navbar-header:target .open {
     display: none;
 }
 
-#navbar-header:target .close{
+#navbar-header:target .close {
     display: flex;
 }
 
-.close{
+.close {
     display: none;
 }
 
-
-@media (min-width: 1200px){
-    .navbar{
+@media (min-width: 1200px) {
+    .navbar {
         display: flex;
         justify-content: space-between;
     }
-    
-    .navbar-menu-mobile{
+    .navbar-menu-mobile {
         display: none;
     }
-    
-    .navbar-container{
+    .navbar-container {
         height: auto;
         flex-direction: row;
         position: static;
@@ -203,37 +196,31 @@ a{
     }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     .navbar {
-    display: block;
+        display: block;
     }
     nav ul li a .rojo {
         background: rgb(247, 107, 107, 0.0);
     }
-    
     nav ul li a .verde {
         background: rgb(91, 247, 161, 0.0);
     }
-    
     nav ul li a .amarillo {
         background: rgb(235, 241, 140, 0.0);
     }
-    
     nav ul li a .celeste {
         background: rgb(36, 191, 238, 0.0);
     }
-    
     nav ul li a .naranja {
         background: rgb(247, 159, 27, 0.0);
     }
-
     .icono {
         width: 0px;
         height: 0px;
     }
-    
-    nav > ul > li > a span {
-        top:0;
+    nav>ul>li>a span {
+        top: 0;
         height: 20px;
     }
 }
